@@ -5,6 +5,8 @@ import Login from "./components/Auth/SignIn/Login";
 import SignUp from "./components/Auth/SignUp/SignUp"
 import { auth } from "./components/FirebaseAuth";
 import "./App.css";
+import StudentRegistrationForm from "./components/Admission module/Student registration/StudentRegistration";
+import HorizontalLinearStepper from "./components/Admission module/Admission form/HorizontalLinearStepper/HorizontalLinearStepper";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -20,13 +22,15 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home name={userName} />} />
           <Route path="*" element={<NotFound />} />
+          {/* <Route path="studentRegistrationForm" element={<StudentRegistrationForm />} /> */}
+          <Route path="horizontalLinearStepper" element={<HorizontalLinearStepper />} />
         </Routes>
       </Router>
     </div>

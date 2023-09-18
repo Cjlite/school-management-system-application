@@ -1,0 +1,81 @@
+.registration-container {
+    max-width: 500px;
+    height: 28rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 20px;
+    padding: 0 70px;
+}
+
+.form-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.terms-privacy {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobileinput {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.selectCountryCode {
+    width: 5rem;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.register-submit[type="submit"] {
+    background-color: rgb(255, 191, 0);
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-submit[type="submit"]:hover {
+    background-color: rgb(240, 188, 31);
+}

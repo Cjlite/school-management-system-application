@@ -1,0 +1,30 @@
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.school-name {
+    font-weight: bold;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
