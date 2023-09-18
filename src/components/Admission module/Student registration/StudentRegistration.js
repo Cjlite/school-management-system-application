@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './StudentRegistrationForm.css';
 import { useNavigate } from 'react-router-dom';
+import Axios from 'axios';
 
 function StudentRegistrationForm() {
     const [formData, setFormData] = useState({
@@ -32,15 +33,15 @@ function StudentRegistrationForm() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5000/api/submit-registration', {
-                method: 'POST',
+            const response = await Axios.post('http://localhost:5000/api/submit-registration', formData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData),
             });
 
-            if (response.ok) {
+            console.log('Response:', response.data);
+
+            if (response.status === 200) {
                 console.log('Registration submitted successfully');
                 navigate("/horizontalLinearStepper");
             } else {
