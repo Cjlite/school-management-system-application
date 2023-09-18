@@ -41,7 +41,7 @@ function StudentRegistrationForm() {
 
             console.log('Response:', response.data);
 
-            if (response.status === 200) {
+            if (response) {
                 console.log('Registration submitted successfully');
                 navigate("/horizontalLinearStepper");
             } else {
