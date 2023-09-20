@@ -5,17 +5,18 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import AdmissionForm from '../Admission module/AdmissionForm';
 import './HorizontalLinearStepper.css';
 import Navbar from '../../../NavBar/Navbar';
-import ProgramApplicationDetail from '../Program&ApplicationDetail/Program&ApplicationDetail';
+import ProgramApplicationDetail from '../Program&ApplicationDetail/ProgramApplicationDetail';
+import AcadamicQualificationDetail from '../Acadamic&QualificationDetail/AcadamicQualificationDetail';
+import DocumentUploadForm from '../Document details/DocumentUploadForm';
 
 const steps = ['Program and application detail', 'Academic qualification detail', 'Documents', "Declaration and submission"];
 
 const stepContent = [
     <div><ProgramApplicationDetail /></div>,
-    <div>Step 2 Content: Academic qualification detail</div>,
-    <div>Step 3 Content: Documents</div>,
+    <div><AcadamicQualificationDetail /></div>,
+    <div><DocumentUploadForm /></div>,
     <div>Step 4 Content: Declaration and submission</div>,
 ];
 
