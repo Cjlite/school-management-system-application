@@ -32,7 +32,17 @@ const Header = () => {
                     <Link to="/erp" className="link">ERP</Link>
                 </p>
             </div>
-            <div className="logo">Logo</div>
+            <div className='logo-container'>
+                <div className="left">Logo</div>
+                <div className="center">Main</div>
+                <div className="right">
+                    <div className='cet-code'>Code: CET : E102 || COMED-K : E041 || PGCET : B163</div>
+                    <div className='Fee-admission'>
+                        <div className='fee-payment'>Online Fee Payment</div>
+                        <div className='admissions-link'>Admissions 2023-24</div>
+                    </div>
+                </div>
+            </div>
         </header>
     );
 };
