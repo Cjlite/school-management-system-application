@@ -26,9 +26,12 @@ header {
     margin-left: 15rem;
 }
 
-.Announcement {
-    background-color: #ef7f1a;
-    padding: 4px;
+.link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
 }
 
 @keyframes slide {
@@ -40,6 +43,11 @@ header {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.Announcement {
+    background-color: #ef7f1a;
+    padding: 4px;
 }
 
 .Announcement-text {

@@ -20,12 +20,20 @@ const Header = () => {
             </div>
             <div className='Brochure'>
                 <p className='Brochure-text'>
-                    Brochure <span><i class="fa-duotone fa-download"></i></span>   | Careers | Events | Committee | Alumni | Grievances | DBIT on G-Maps | Internship | Virtual Tour | ERP
+                    <Link to="/brochure" className="link"> Brochure <span><i className="fa-duotone fa-download"></i></span></Link>
+                    <Link to="/careers" className="link">Careers</Link>
+                    <Link to="/events" className="link">Events</Link>
+                    <Link to="/committee" className="link">Committee</Link>
+                    <Link to="/alumni" className="link">Alumni</Link>
+                    <Link to="/grievances" className="link">Grievances</Link>
+                    <Link to="/dbit-gmaps" className="link">DBIT on G-Maps</Link>
+                    <Link to="/internship" className="link">Internship</Link>
+                    <Link to="/virtual-tour" className="link">Virtual Tour</Link>
+                    <Link to="/erp" className="link">ERP</Link>
                 </p>
             </div>
             <div className="logo">Logo</div>
         </header>
     );
 };
-
 export default Header;
