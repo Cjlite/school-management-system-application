@@ -11,6 +11,7 @@ header {
     font-size: 24px;
     font-weight: bold;
     padding: 40px;
+    margin-left: 10rem;
 }
 
 .Brochure {
@@ -34,6 +35,10 @@ header {
     border-right: 1px solid #fff;
 }
 
+.icon-container {
+    padding: 6px;
+}
+
 @keyframes slide {
     0% {
         transform: translateX(100%);
@@ -47,7 +52,7 @@ header {
 
 .Announcement {
     background-color: #ef7f1a;
-    padding: 4px;
+    padding: 2px;
 }
 
 .Announcement-text {

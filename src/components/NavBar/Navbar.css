@@ -16,7 +16,8 @@ nav ul {
 
 .home,
 .lms-icon {
-    background-color: #ff4500;
+    background-color: #fa6a2f;
+    border-radius: 25px;
 }
 
 nav li {
@@ -30,29 +31,36 @@ nav a {
     color: #fff;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 7px 15px;
+
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #ff4500;
+    background-color: #fa6a2f;
     color: #fff;
+}
+
+.navlink {
     border-radius: 25px;
 }
 
 .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    color: #fff;
+    margin-top: 5px;
+    background-color: #f4f0f0;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    border: gray;
+}
+
+.dropdown-link {
+    color: gray;
 }
 
 nav li:hover .dropdown {
     display: flex;
+    width: max-content;
 }
