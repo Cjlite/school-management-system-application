@@ -1,30 +1,58 @@
-.left-section {
+nav {
+    background-color: #282888;
+    color: #fff;
+    padding: 1px;
+}
+
+ul {
+    margin-left: 14rem;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
+    gap: 2px;
 }
 
-.logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.home,
+.lms-icon {
+    background-color: #ff4500;
 }
 
-.school-name {
-    font-weight: bold;
+nav li {
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
-.right-section {
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff4500;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #fff;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav li:hover .dropdown {
     display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.user-name {
-    font-weight: bold;
 }
