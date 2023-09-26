@@ -2,7 +2,7 @@
     max-width: 500px;
     height: 35rem;
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 1rem;
     padding: 25px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -11,10 +11,8 @@
 
 .form-header {
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    margin-bottom: 20px;
-    padding: 0 70px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .form-title {
@@ -45,7 +43,6 @@
 
 .registration-form {
     max-width: 500px;
-    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;

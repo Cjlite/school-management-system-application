@@ -76,7 +76,7 @@ export default function HorizontalLinearStepper() {
 
     return (
         <Box className="horizontal-stepper">
-            <Navbar className="navbar" />
+            {/* <Navbar className="navbar" /> */}
             <Stepper activeStep={activeStep}>
                 {steps.map((label, index) => {
                     const stepProps = {};

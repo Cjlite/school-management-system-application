@@ -18,6 +18,7 @@ const Header = () => {
                     </span>
                 </p>
             </div>
+
             <div className='Brochure'>
                 <p className='Brochure-text'>
                     <Link to="/brochure" className="link"> Brochure <span><i className="fa-duotone fa-download"></i></span></Link>
@@ -32,14 +33,15 @@ const Header = () => {
                     <Link to="/erp" className="link">ERP</Link>
                 </p>
             </div>
+
             <div className='logo-container'>
                 <div className="left">Logo</div>
                 <div className="center">Main</div>
                 <div className="right">
                     <div className='cet-code'>Code: CET : E102 || COMED-K : E041 || PGCET : B163</div>
                     <div className='Fee-admission'>
-                        <div className='fee-payment'>Online Fee Payment</div>
-                        <div className='admissions-link'>Admissions 2023-24</div>
+                        <div className='fee-payment'><Link to="" className="">Online Fee Payment</Link></div>
+                        <div className='admissions-link'><Link to="studentRegistrationForm" className="">Admissions 2023-24</Link></div>
                     </div>
                 </div>
             </div>

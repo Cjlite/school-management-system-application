@@ -1,13 +1,16 @@
 import React from "react";
 import "./Home.css"
-import StudentRegistrationForm from "../Admission module/Student registration/StudentRegistration";
+import Header from "../Heder/Header";
+import Navbar from "../NavBar/Navbar";
 
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Home(props) {
   return (
     <div className="home-cointainer">
-      <StudentRegistrationForm />
+      <Header />
+      <Navbar />
+      <Outlet />
     </div>
   );
 }
