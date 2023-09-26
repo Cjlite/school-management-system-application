@@ -43,7 +43,7 @@ function StudentRegistrationForm() {
 
             if (response) {
                 console.log('Registration submitted successfully');
-                navigate("/horizontalLinearStepper");
+                navigate("/home/horizontalLinearStepper");
             } else {
                 console.error('Failed to submit registration');
             }
