@@ -64,3 +64,19 @@
     font-size: 1rem;
     text-decoration: none;
 }
+
+
+/* Responsive styles for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .innerBox {
+        min-width: auto;
+        width: 80%;
+    }
+}
+
+/* Responsive styles for even smaller screens (e.g., mobile) */
+@media (max-width: 390) {
+    .innerBox {
+        width: 90%;
+    }
+}
