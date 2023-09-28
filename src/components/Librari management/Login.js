@@ -11,19 +11,19 @@ export default function Login() {
 
     const history = useNavigate();
     const handleCkick = (e) => {
-        e.preventDefault();
-        axios.post('http://localhost:9000/login', login).then((res) => {
-            if (res.data.error) {
-                toast.error(res.data.error)
-            }
-            else {
-                toast.success(res.data.msg)
-                setTimeout(() => {
-                    history('/sidebar/dashboard')
-                }, 2000)
-            }
+        // e.preventDefault();
+        // axios.post('http://localhost:9000/login', login).then((res) => {
+        //     if (res.data.error) {
+        //         toast.error(res.data.error)
+        //     }
+        //     else {
+        //         toast.success(res.data.msg)
+        //         setTimeout(() => {
+        //             history('/sidebar/dashboard')
+        //         }, 2000)
+        //     }
 
-        })
+        // })
     }
 
     const togglePassword = () => {

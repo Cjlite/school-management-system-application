@@ -27,8 +27,7 @@ const Header = () => {
                     <Link to="/committee" className="link">Committee</Link>
                     <Link to="/alumni" className="link">Alumni</Link>
                     <Link to="/grievances" className="link">Grievances</Link>
-                    <Link to="/dbit-gmaps" className="link">DBIT on G-Maps</Link>
-                    <Link to="/internship" className="link">Internship</Link>
+                    <Link to="/dbit-gmaps" className="link">School on G-Maps</Link>
                     <Link to="/virtual-tour" className="link">Virtual Tour</Link>
                     <Link to="/erp" className="link">ERP</Link>
                 </p>

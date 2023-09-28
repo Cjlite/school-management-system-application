@@ -11,6 +11,13 @@ import AcadamicQualificationDetail from "./components/Admission module/Admission
 import DocumentUploadForm from "./components/Admission module/Admission form/Document details/DocumentUploadForm";
 import Navbar from "./components/NavBar/Navbar";
 import LibraryMain from "./components/Librari management/LibraryMain";
+import Sidebar from "./components/Librari management/Sidebar";
+import Dashboard from "./components/Librari management/Dashboard";
+import AddBook from "./components/Librari management/AddBook";
+import AddStudent from "./components/Librari management/AddStudent";
+import IssueBook from "./components/Librari management/IssueBook";
+import ReturnBook from "./components/Librari management/ReturnBook";
+import AddUser from "./components/Librari management/AddUser";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -36,7 +43,15 @@ function App() {
           <Route path="acadamicQualificationDetail" element={<AcadamicQualificationDetail />} />
           <Route path="documentUploadForm" element={<DocumentUploadForm />} />
         </Route>
-        <Route path="/libraryMain" element={<LibraryMain />} />
+        <Route path='/libraryMain/' element={<Sidebar />}>
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='addbook' element={<AddBook />} />
+          <Route path='addstudent' element={<AddStudent />} />
+          <Route path='issuebook' element={<IssueBook />} />
+          <Route path='returnbook' element={<ReturnBook />} />
+          <Route path='adduser' element={<AddUser />} />
+        </Route>
+        {/* <Route path="/libraryMain" element={<LibraryMain />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

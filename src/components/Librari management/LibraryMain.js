@@ -14,7 +14,7 @@ function LibraryMain() {
         <div>
             <Routes>
                 {/* <Route path='/' element={<Login />} /> */}
-                <Route path='/' element={<Sidebar />}>
+                <Route path='/sidebar/' element={<Sidebar />}>
                     <Route path='dashboard' element={<Dashboard />} />
                     <Route path='addbook' element={<AddBook />} />
                     <Route path='addstudent' element={<AddStudent />} />
