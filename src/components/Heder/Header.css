@@ -109,3 +109,47 @@ header {
 .sliding-text-link {
     color: #fff;
 }
+
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .right {
+        align-items: center;
+    }
+
+    .Brochure-text {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .Announcement-text {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 390px) {
+    .Announcement-text {
+        font-size: 12px;
+    }
+
+    .sliding-text {
+        font-size: 12px;
+    }
+
+    .Brochure-text {
+        font-size: 12px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import InputControl from "../InputControl/InputControl";
 import { auth } from "../../FirebaseAuth";
-import "./Login.css"
+import "./SignIn.css"
 
-function Login() {
+function SignIn() {
     const navigate = useNavigate();
     const [values, setValues] = useState({
         email: "",
@@ -15,23 +15,24 @@ function Login() {
     const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
     const handleSubmission = () => {
-        if (!values.email || !values.pass) {
-            setErrorMsg("Fill all fields");
-            return;
-        }
-        setErrorMsg("");
+        // if (!values.email || !values.pass) {
+        //     setErrorMsg("Fill all fields");
+        //     return;
+        // }
+        // setErrorMsg("");
 
-        setSubmitButtonDisabled(true);
-        signInWithEmailAndPassword(auth, values.email, values.pass)
-            .then(async (res) => {
-                setSubmitButtonDisabled(false);
+        // setSubmitButtonDisabled(true);
+        // signInWithEmailAndPassword(auth, values.email, values.pass)
+        //     .then(async (res) => {
+        //         setSubmitButtonDisabled(false);
 
-                navigate("/home");
-            })
-            .catch((err) => {
-                setSubmitButtonDisabled(false);
-                setErrorMsg(err.message);
-            });
+        //         navigate("/home");
+        //     })
+        //     .catch((err) => {
+        //         setSubmitButtonDisabled(false);
+        //         setErrorMsg(err.message);
+        //     });
+        navigate("/home");
     };
     return (
         <div className="container">
@@ -70,4 +71,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default SignIn;

@@ -64,3 +64,51 @@ nav li:hover .dropdown {
     display: flex;
     width: max-content;
 }
+
+
+
+/* Responsive styles for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 7px 15px;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    .dropdown {
+        margin-top: 0;
+        position: relative;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 390) {
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    nav li:hover .dropdown {
+        display: none;
+    }
+
+    .home,
+    .lms-icon {
+        border-radius: 0;
+    }
+}

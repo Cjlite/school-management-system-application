@@ -16,26 +16,27 @@ function SignUp() {
     const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
     const handleSubmission = () => {
-        if (!values.name || !values.email || !values.pass) {
-            setErrorMsg("Fill all fields");
-            return;
-        }
-        setErrorMsg("");
+        // if (!values.name || !values.email || !values.pass) {
+        //     setErrorMsg("Fill all fields");
+        //     return;
+        // }
+        // setErrorMsg("");
 
-        setSubmitButtonDisabled(true);
-        createUserWithEmailAndPassword(auth, values.email, values.pass)
-            .then(async (res) => {
-                setSubmitButtonDisabled(false);
-                const user = res.user;
-                await updateProfile(user, {
-                    displayName: values.name,
-                });
-                navigate("/login");
-            })
-            .catch((err) => {
-                setSubmitButtonDisabled(false);
-                setErrorMsg(err.message);
-            });
+        // setSubmitButtonDisabled(true);
+        // createUserWithEmailAndPassword(auth, values.email, values.pass)
+        //     .then(async (res) => {
+        //         setSubmitButtonDisabled(false);
+        //         const user = res.user;
+        //         await updateProfile(user, {
+        //             displayName: values.name,
+        //         });
+        //         navigate("/login");
+        //     })
+        //     .catch((err) => {
+        //         setSubmitButtonDisabled(false);
+        //         setErrorMsg(err.message);
+        //     });
+        navigate("/login");
     };
 
     return (

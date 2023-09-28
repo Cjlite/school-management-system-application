@@ -30,26 +30,27 @@ function StudentRegistrationForm() {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
-        try {
-            const response = await Axios.post('http://localhost:5000/api/submit-registration', formData, {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
+        // try {
+        //     const response = await Axios.post('http://localhost:5000/api/submit-registration', formData, {
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //     });
 
-            console.log('Response:', response.data);
+        //     console.log('Response:', response.data);
 
-            if (response) {
-                console.log('Registration submitted successfully');
-                navigate("/home/horizontalLinearStepper");
-            } else {
-                console.error('Failed to submit registration');
-            }
-        } catch (error) {
-            console.error('Error submitting registration:', error);
-        }
+        //     if (response) {
+        //         console.log('Registration submitted successfully');
+        //         navigate("/home/horizontalLinearStepper");
+        //     } else {
+        //         console.error('Failed to submit registration');
+        //     }
+        // } catch (error) {
+        //     console.error('Error submitting registration:', error);
+        // }
+        navigate("/home/horizontalLinearStepper");
     };
 
     return (
